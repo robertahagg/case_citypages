@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>Information om städer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="cities.js"></script>
+    <script src="fakeBackend.js"></script>
+</head>
+
+<body>
+    <main role="main">
+
+        <header role="banner">
+            <form role="search" class="searchForm" onsubmit="return search();">
+                <input class="searchField" type="text" id="seachField" name="" placeholder="Ange stad eller land">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </header>
+
+        <section>
+            <h1>Information om <b id="cityName">Stockholm</b></h1>
+            <section class="flex-container">
+
+                <article role="article" class="blueBox" id="bluePuff">
+                    <header>
+                        <h2 id="title">Nordens största stad</h2>
+                    </header>
+                    <p id="body">Stockholm är Sveriges huvudstad samt landets kulturella, politiska, mediala och ekonomiska centrum. Det är Sveriges såväl som Nordens folkrikaste tätort.</p>
+                </article>
+
+                <article role="article" class="whiteBoxSmall" id="whitePuff">
+                    <header>
+                        <h2 id="boxSmallTitle">Världsarv</h2>
+                    </header>
+                    <p id="boxSmallBody">Tre av Unescos världsarv ligger i Stockholmsområdet: Drottningsholms slott och Birka (båda i Ekerö kommun), samt Skogskyrkogården (Stockholms kommun).</p>
+                </article>
+
+                <article role="article" class="whiteBoxBig" id="whiteBigPuff">
+                    <div class="row">
+                        <h2 class="second" id="whiteBoxBigTitle">Gamla stan - Staden mellan broarna</h2>
+                        <img class="articleImg first" id="boxImg" src="assets/stockholm.jpg" alt="stockholm" width="160" height="110">
+                        <p class="third" id="whiteBoxBigBody">Under flera hundra år utgjorde Gamla stan den egentliga staden. Stadsdelen bildades 1926 och hade år 2006 ca 3 000 invånare. På Gamla stans norra spets återfinns Stockholms slott.
+                        </p>
+                        <button class="readMoreBtn forth" type="submit">Läs mer <i class="fas fa-angle-right"></i></button>
+                    </div>
+                </article>
+
+            </section>
+
+            <aside role="complementary" class="linkContainer">
+                <p class="infoLink">
+                    <a aria-label="Om tjänsten" tabindex="0" onclick="toggleInfoText()">Om tjänsten</a>
+                </p>
+                <div id="infoText">
+                    <p>All information om städerna är hämtad från <a href="https://www.wikipedia.org/" aria-label="Wikipedia">Wikipedia</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </aside>
+
+        </section>
+    </main>
+</body>
+
+</html>

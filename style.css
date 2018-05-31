@@ -1,0 +1,209 @@
+body {
+    margin: 0px;
+}
+
+main {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.searchForm {
+    display: flex;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: auto;
+}
+
+.flex-container>article {
+    background-color: #EEEEEE;
+    color: #4f4e4e;
+    width: 110px;
+    margin: 10px;
+    text-align: center;
+    flex-direction: row;
+    overflow: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex-container>article.blueBox {
+    background-color: #1377B5;
+    color: white;
+    flex-grow: 1;
+}
+
+.flex-container>article.whiteBoxSmall {
+    flex-grow: 1;
+}
+
+.flex-container>article.whiteBoxBig {
+    flex-grow: 6;
+}
+
+.linkContainer,
+infoText {
+    text-align: left;
+    width: 55%;
+}
+
+.infoLink {
+    text-decoration: underline;
+    margin-top: 50px;
+    margin-left: 5px;
+    font-size: 17px;
+    color: rgb(134, 133, 133);
+}
+
+.readMoreBtn {
+    float: right;
+    background-color: #4A4A4A;
+    color: white;
+    font-size: 20px;
+    font-weight: 500px;
+    padding: 8px;
+    margin: 15px;
+    margin-right: 15px;
+    overflow: auto;
+}
+
+.searchField {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-right: none;
+    background: #EEEEEE;
+    font-style: italic;
+    padding: 15px;
+}
+
+.searchForm button {
+    width: 65px;
+    background: #FF591D;
+    color: white;
+    font-size: 20px;
+    border-left: none;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.searchForm button:hover {
+    background: #0b7dda;
+}
+
+.articleImg {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    padding: 8px 15px;
+}
+
+.puffFirst {
+    order: 1;
+}
+
+.puffSecond {
+    order: 2;
+}
+
+.puffThird {
+    order: 3;
+}
+
+.whiteBoxBig .row .third {
+    width: 150px;
+    float: left;
+    margin-top: 0px;
+}
+
+h2,
+h1,
+input,
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: normal;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 450;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        margin: 15px;
+    }
+    .searchForm,
+    .linkContainer {
+        width: 100%;
+    }
+    .flex-container>article {
+        background-color: whitesmoke;
+        box-sizing: border-box;
+        color: #4A4A4A;
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    .articleImg {
+        width: 100%;
+        vertical-align: middle;
+        padding-left: 0px;
+    }
+    .infoLink {
+        text-align: center;
+        text-decoration: underline;
+        margin-left: 0px;
+    }
+    .whiteBoxBig .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .whiteBoxBig .row .first {
+        order: 1;
+    }
+    .whiteBoxBig .row .second {
+        order: 2;
+    }
+    .whiteBoxBig .row .third {
+        order: 3;
+        width: 100%;
+    }
+    .whiteBoxBig .row .forth {
+        order: 4;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .blueBox {
+        order: 1;
+    }
+    .whiteBoxSmall {
+        order: 2;
+    }
+    .whiteBoxBig {
+        order: 3;
+    }
+}
